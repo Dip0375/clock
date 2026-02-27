@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNS Checker | Time Master</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <main class="app-shell">
+      <nav class="top-nav">
+        <a href="index.html">← Home</a>
+        <a href="stopwatch.html">Stopwatch</a>
+        <a href="world-time.html">World Time</a>
+        <a href="chess-clock.html">Chess Clock</a>
+        <a href="ip-checker.html">IP Checker</a>
+      </nav>
+
+      <section class="card" aria-labelledby="dns-title">
+        <div class="card-heading">
+          <h1 id="dns-title">DNS Checker</h1>
+          <p>Query DNS records (A, AAAA, MX, NS, TXT, CNAME) for any domain.</p>
+        </div>
+
+        <div class="zone-controls">
+          <label for="domain-input">Domain:</label>
+          <input id="domain-input" type="text" placeholder="example.com" />
+          <button id="check-dns" class="btn primary">Check DNS</button>
+        </div>
+
+        <div id="dns-status" class="status">Ready.</div>
+        <div id="dns-results" class="dns-results"></div>
+      </section>
+
+      <footer class="footer">© 2026 dipnarayan.n. All rights reserved.</footer>
+    </main>
+    <script src="dns-checker.js"></script>
+  </body>
+</html>
