@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch | Time Master</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <main class="app-shell">
+      <nav class="top-nav"><a href="index.html">← Home</a><a href="world-time.html">World Time</a><a href="chess-clock.html">Chess Clock</a><a href="ip-checker.html">IP Checker</a><a href="dns-checker.html">DNS Checker</a></nav>
+      <section class="card" aria-labelledby="stopwatch-title">
+        <div class="card-heading">
+          <h1 id="stopwatch-title">Stopwatch</h1>
+          <p>High-precision timer with modern lap tracking.</p>
+        </div>
+        <div class="stopwatch-display" id="stopwatch-display">00:00:00.00</div>
+        <div class="button-row">
+          <button id="start-stopwatch" class="btn primary">Start</button>
+          <button id="pause-stopwatch" class="btn">Pause</button>
+          <button id="reset-stopwatch" class="btn">Reset</button>
+          <button id="lap-stopwatch" class="btn accent">Lap</button>
+        </div>
+        <ol id="lap-list" class="lap-list"></ol>
+      </section>
+      <footer class="footer">© 2026 dipnarayan.n. All rights reserved.</footer>
+    </main>
+    <script src="stopwatch.js"></script>
+  </body>
+</html>

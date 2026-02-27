@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Checker | Time Master</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <main class="app-shell">
+      <nav class="top-nav">
+        <a href="index.html">← Home</a>
+        <a href="stopwatch.html">Stopwatch</a>
+        <a href="world-time.html">World Time</a>
+        <a href="chess-clock.html">Chess Clock</a>
+        <a href="dns-checker.html">DNS Checker</a>
+      </nav>
+
+      <section class="card" aria-labelledby="ip-title">
+        <div class="card-heading">
+          <h1 id="ip-title">IP Checker</h1>
+          <p>Check your own/public IP details and evaluate network risk signals.</p>
+        </div>
+
+        <div class="zone-controls">
+          <label for="ip-input">IP address:</label>
+          <input id="ip-input" type="text" placeholder="Leave empty to use your current IP" />
+          <button id="check-ip" class="btn primary">Check IP</button>
+        </div>
+
+        <div id="ip-status" class="status">Ready.</div>
+        <div id="ip-grid" class="info-grid"></div>
+
+        <article class="card nested-card" aria-live="polite">
+          <h2>Estimated Malicious Score</h2>
+          <p id="ip-score" class="risk-score">-- / 100</p>
+          <p id="ip-score-note" class="status">No scan yet.</p>
+        </article>
+      </section>
+
+      <footer class="footer">© 2026 dipnarayan.n. All rights reserved.</footer>
+    </main>
+    <script src="ip-checker.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Time | Time Master</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <main class="app-shell">
+      <nav class="top-nav"><a href="index.html">← Home</a><a href="stopwatch.html">Stopwatch</a><a href="chess-clock.html">Chess Clock</a><a href="ip-checker.html">IP Checker</a><a href="dns-checker.html">DNS Checker</a></nav>
+      <section class="card" aria-labelledby="world-title">
+        <div class="card-heading">
+          <h1 id="world-title">World Time Clock</h1>
+          <p>Visual live clocks for major zones and your custom picks.</p>
+        </div>
+        <div class="zone-controls">
+          <label for="zone-picker">Add time zone:</label>
+          <select id="zone-picker"></select>
+          <button id="add-zone" class="btn primary">Add Clock</button>
+        </div>
+        <div id="world-clocks" class="clock-grid" role="list"></div>
+      </section>
+      <footer class="footer">© 2026 dipnarayan.n. All rights reserved.</footer>
+    </main>
+    <script src="world-time.js"></script>
+  </body>
+</html>
